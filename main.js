@@ -1,16 +1,13 @@
-let title = 'Lesson 02';
-let screens = 'Простые, Сложные, Интерактивные';
-let screenPrice = 379;
-let rollback = 37;
-let fullPrice = 2000;
-let adaptive = true;
+let num = 266219;
 
-console.log(typeof title);
-console.log(typeof fullPrice);
-console.log(typeof adaptive);
-console.log(screens.length);
-console.log('Стоимость верстки экранов ' + screenPrice + ' рублей/ долларов/гривен/юани');
-console.log('Стоимость разработки сайта ' + fullPrice +' рублей/ долларов/гривен/юани');
-console.log(screens.toLowerCase().split(', '));
-console.log('Процент отката посреднику за работу: '+ fullPrice*(rollback /  100));
+let arrayNum = String(num).split('');
+
+let result = arrayNum.reduce(function (sum,current) {
+    return sum * current;
+});
+
+let result3d = result ** 3;
+console.log(String(result3d).slice(0,2));
+
+
 
